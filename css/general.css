@@ -1,0 +1,117 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* RESET SLUT*/
+
+/* BODY */
+body {
+  background: repeating-linear-gradient(
+    to right,
+    #eae1bc,
+    #eae1bc 50px,
+    #f5f0db 50px,
+    #f5f0db 100px
+  );
+  width: 100%;
+  height: 100%;
+}
+/* BODY SLUT*/
+
+/* HEADER */
+header {
+  background-color: #8d392a;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blomst {
+  width: 100px;
+  height: auto;
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+
+/* MENU */
+#menu {
+  display: flex;
+  gap: 8rem;
+}
+
+#menu a {
+  font-family: "Itim", cursive;
+  font-size: 20px;
+  color: #e7dfc0;
+  text-decoration: none;
+}
+/* MENU SLUT*/
+
+/* BURGERMENU */
+#burger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #e7dfc0;
+  cursor: pointer;
+}
+/* BURGERMENU SLUT*/
+
+/* OVERLAY */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 5;
+}
+#overlay.show {
+  display: block;
+}
+/* OVERLAY SLUT*/
+
+/* MOBIL */
+@media (max-width: 800px) {
+  #menu {
+    position: fixed;
+    top: 0;
+    right: -250px; /* skjult til højre */
+    width: 250px;
+    height: 100%;
+    background: #8d392a;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    transition: right 0.3s ease;
+    z-index: 10;
+  }
+
+  #menu.show {
+    right: 0; /* synlig */
+  }
+
+  #burger {
+    display: block;
+  }
+
+  #menu a {
+    font-size: 24px;
+  }
+}

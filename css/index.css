@@ -1,0 +1,26 @@
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* To lige kolonner */
+  gap: 70px; /* Afstand mellem SVG og billede */
+  align-items: center; /* Vertikal centrering */
+  margin: 40px;
+}
+
+.majas_portfolio {
+  width: 100%;
+  height: auto;
+}
+
+.protraet {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Holder billedet proportionelt */
+  border-radius: 40px;
+}
+
+@media (max-width: 800px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
