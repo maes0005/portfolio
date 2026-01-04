@@ -1,0 +1,120 @@
+/* LAYOUT */
+.proces_web {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 5rem;
+}
+.tekst_web {
+  max-width: 50rem;
+}
+
+.billeder_web {
+  max-width: 25rem;
+}
+
+.billeder_web img + img {
+  margin-top: 1.5rem;
+}
+
+.loesning_web {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 5rem;
+  margin-top: 5rem;
+}
+
+.tekst2_web {
+  max-width: 45rem;
+  margin-left: 3rem;
+}
+
+.evaluvering_web {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 8rem;
+}
+
+.tekst3_web {
+  margin-top: 3rem;
+  max-width: 48rem;
+}
+
+.iphone_web {
+  max-width: 20rem;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Accordion/drop down */
+summary {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+summary::after {
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  content: "+";
+}
+
+details[open] summary::after {
+  content: "-";
+}
+
+.p_grid {
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-inline-start: 1.25rem;
+}
+/* Accordion/drop down SLUT*/
+
+/* MOBIL */
+@media (max-width: 800px) {
+  .proces_web,
+  .loesning_web,
+  .evaluvering_web {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  .tekst_web,
+  .tekst2_web,
+  .tekst3_web {
+    margin: 1rem;
+  }
+
+  .computer_web {
+    order: 2;
+    justify-self: center;
+    max-width: 100%;
+  }
+
+  h2 {
+    margin-top: 2rem;
+  }
+
+  .billeder_web {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .billeder_web img {
+    width: 20rem;
+    height: auto;
+  }
+
+  .computer_web img {
+    width: 20rem;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .iphone_web img {
+    width: 15rem;
+    height: auto;
+    margin-top: 20px;
+  }
+}

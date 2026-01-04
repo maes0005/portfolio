@@ -1,11 +1,3 @@
-.h1_portfolio {
-  text-align: center;
-  font-family: "Itim", cursive;
-  font-weight: 500;
-  font-size: 80px;
-  color: #8d392a;
-}
-
 .temaer {
   display: grid;
   grid-template-columns: 1fr 1fr;

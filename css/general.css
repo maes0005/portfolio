@@ -26,6 +26,43 @@ body {
 }
 /* BODY SLUT*/
 
+/* FONT */
+h1 {
+  text-align: center;
+  font-family: "Itim", cursive;
+  font-weight: 500;
+  font-size: 80px;
+  color: #8d392a;
+}
+
+h2 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #8d392a;
+}
+
+p,
+li {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+}
+
+summary {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  color: #8d392a;
+}
+
+.p_undertitel {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: #8d392a;
+  margin-top: 15px;
+}
+/* FONT SLUT*/
+
 /* HEADER */
 header {
   background-color: #8d392a;
@@ -102,16 +139,24 @@ header {
     transition: right 0.3s ease;
     z-index: 10;
   }
-
   #menu.show {
     right: 0; /* synlig */
   }
-
   #burger {
     display: block;
   }
-
   #menu a {
     font-size: 24px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .p_undertitel {
+    font-size: 20px;
   }
 }
