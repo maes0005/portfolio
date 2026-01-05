@@ -1,0 +1,106 @@
+/* LAYOUT */
+/* proces */
+.proces_indhold {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 5rem;
+}
+
+.tekst_indhold {
+  max-width: 50rem;
+}
+
+.billeder_indhold {
+  max-width: 60rem;
+}
+/* proces slut*/
+
+/* løsning */
+.link_indhold {
+  margin-left: 2.4rem;
+  grid-row: 2;
+}
+
+.iphone_indhold {
+  max-width: 18rem;
+}
+.computer_indhold {
+  max-width: 28rem;
+  margin-top: 8rem;
+}
+
+.iphone_computer_indhold {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 2rem;
+  align-items: start;
+  margin-left: 2rem;
+}
+
+.loesning_indhold {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.tekst2_indhold {
+  max-width: 40rem;
+  margin-top: 3rem;
+}
+/* løsning slut*/
+
+/* evaluering */
+.evaluering_indhold {
+  margin: 5rem;
+  max-width: 58rem;
+}
+
+.summary_indhold {
+  margin-top: 5px;
+}
+/* evaluering slut */
+/* LAYOUT SLUT */
+
+/* MOBIL */
+@media (max-width: 800px) {
+  .proces_indhold,
+  .loesning_indhold,
+  .evaluering_indhold {
+    grid-template-columns: 1fr;
+    margin: 1rem;
+    margin-top: 0;
+  }
+
+  .loesning_indhold {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tekst2_indhold {
+    order: 1;
+    margin-top: 0;
+  }
+
+  .iphone_computer_indhold {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0;
+    margin-top: 1.5rem;
+    order: 2;
+  }
+
+  .link_indhold {
+    margin-left: 0;
+    margin-top: 1rem;
+    order: 3;
+    align-self: flex-start;
+  }
+
+  .iphone_indhold {
+    width: 7rem;
+  }
+
+  .computer_indhold {
+    margin-top: 2rem;
+    width: 15rem;
+  }
+}
