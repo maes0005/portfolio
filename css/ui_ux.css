@@ -59,3 +59,48 @@
 .summary_uxui {
   margin-top: 5px;
 }
+
+/* MOBIL */
+@media (max-width: 800px) {
+  .proces_uxui,
+  .loesning_uxui,
+  .evaluering_uxui {
+    grid-template-columns: 1fr;
+    margin: 1rem;
+    margin-top: 0;
+  }
+
+  .loesning_uxui {
+    display: flex; /* SKIFT fra grid til flex */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tekst2_uxui {
+    order: 1;
+    margin-top: 0;
+  }
+
+  .iphone_computer_uxui {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0;
+    margin-top: 1.5rem;
+    order: 2;
+  }
+
+  .link_uiux {
+    margin-left: 0;
+    margin-top: 1rem;
+    order: 3;
+    align-self: flex-start;
+  }
+
+  .iphone_uxui {
+    width: 7rem;
+  }
+
+  .computer_uxui {
+    margin-top: 2rem;
+    width: 15rem;
+  }
+}
