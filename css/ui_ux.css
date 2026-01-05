@@ -1,0 +1,106 @@
+/* LAYOUT */
+.proces_uxui {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 5rem;
+}
+
+.tekst_uxui {
+  max-width: 50rem;
+  margin-top: 3rem;
+}
+
+.billeder_uxui {
+  max-width: 30rem;
+  margin-top: 0;
+}
+
+.loesning_uxui {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.link_uiux {
+  margin-left: 2.4rem;
+  grid-row: 2;
+}
+
+.iphone_uxui {
+  max-width: 18rem;
+}
+.computer_uxui {
+  max-width: 28rem;
+  margin-top: 8rem;
+}
+
+.iphone_computer_uxui {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 2rem;
+  align-items: start;
+  margin-left: 2rem;
+}
+
+.loesning_uxui {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.tekst2_uxui {
+  max-width: 40rem;
+  margin-top: 3rem;
+}
+
+.evaluering_uxui {
+  margin: 5rem;
+  max-width: 58rem;
+}
+
+.summary_uxui {
+  margin-top: 5px;
+}
+
+/* MOBIL */
+@media (max-width: 800px) {
+  .proces_uxui,
+  .loesning_uxui,
+  .evaluering_uxui {
+    grid-template-columns: 1fr;
+    margin: 1rem;
+    margin-top: 0;
+  }
+
+  .loesning_uxui {
+    display: flex; /* SKIFT fra grid til flex */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tekst2_uxui {
+    order: 1;
+    margin-top: 0;
+  }
+
+  .iphone_computer_uxui {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0;
+    margin-top: 1.5rem;
+    order: 2;
+  }
+
+  .link_uiux {
+    margin-left: 0;
+    margin-top: 1rem;
+    order: 3;
+    align-self: flex-start;
+  }
+
+  .iphone_uxui {
+    width: 7rem;
+  }
+
+  .computer_uxui {
+    margin-top: 2rem;
+    width: 15rem;
+  }
+}

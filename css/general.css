@@ -40,12 +40,17 @@ h2 {
   font-weight: 600;
   font-size: 30px;
   color: #8d392a;
+  margin-bottom: 5px;
 }
 
 p,
 li {
   font-family: "Inter", sans-serif;
   font-size: 20px;
+  line-height: 2rem;
+}
+li {
+  margin-left: 20px;
 }
 
 summary {
@@ -64,8 +69,8 @@ summary {
 
 a {
   font-family: "Inter", sans-serif;
-  font-size: 20px;
-  color: #8d392a;
+  font-size: 18px;
+  color: black;
 }
 /* FONT SLUT*/
 
