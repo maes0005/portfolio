@@ -1,0 +1,21 @@
+/* LAYOUT */
+/* baggrund */
+.baggrund_om_mig {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7rem;
+  margin: 5rem;
+}
+
+.protræt_om_mig img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+/* baggrund slut*/
+
+/* personlig udvikling */
+.udvikling_om_mig {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
