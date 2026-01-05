@@ -1,0 +1,74 @@
+/* LAYOUT */
+.proces_bruger {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 5rem;
+}
+
+.tekst_bruger {
+  max-width: 50rem;
+}
+
+.billeder_bruger {
+  max-width: 55rem;
+}
+
+.loesning_bruger {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.computer_bruger {
+  width: 35rem;
+  margin-left: 3rem;
+}
+
+.tekst2_bruger {
+  max-width: 45rem;
+  margin-top: 2rem;
+}
+
+.evaluering_bruger {
+  margin: 5rem;
+  max-width: 58rem;
+}
+
+.summary_bruger {
+  margin-top: 5px;
+}
+
+@media (max-width: 800px) {
+  .proces_bruger,
+  .loesning_bruger,
+  .evaluering_bruger {
+    grid-template-columns: 1fr;
+    margin: 1rem;
+  }
+  .loesning_bruger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tekst_bruger,
+  .tekst3_bruger {
+    margin-left: 1rem;
+  }
+
+  .tekst2_bruger {
+    order: 1;
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+  .computer_bruger {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0;
+    margin-top: 1.5rem;
+    order: 2;
+    width: 22rem;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
