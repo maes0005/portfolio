@@ -1,0 +1,13 @@
+.proces_bruger {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 5rem;
+}
+
+.tekst_bruger {
+  max-width: 50rem;
+}
+
+.billeder_bruger {
+  max-width: 55rem;
+}
