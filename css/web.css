@@ -31,7 +31,7 @@
 .evaluvering_web {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  margin: 8rem;
+  margin: 5rem;
 }
 
 .tekst3_web {
