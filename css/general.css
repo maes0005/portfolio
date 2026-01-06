@@ -99,6 +99,30 @@ header {
   transform: rotate(90deg);
   transform-origin: center;
 }
+/* HEADER SLUT*/
+
+/* FOOTER */
+footer {
+  background-color: #8d392a;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 8rem;
+}
+
+.footer_logo,
+.footer_kontakt,
+.footer_sociale_medier {
+  margin: 2rem;
+}
+.footer_logo {
+  margin-left: 4rem;
+}
+
+footer p {
+  color: #e7dfc0;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+/* FOOTER SLUT*/
 
 /* MENU */
 #menu {
@@ -176,5 +200,25 @@ header {
   }
   .p_undertitel {
     font-size: 20px;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  .footer_logo,
+  .footer_kontakt,
+  .footer_sociale_medier {
+    margin: 1rem;
+  }
+  footer .blomst {
+    display: none;
+  }
+  .footer_titel {
+    font-size: 20px;
+  }
+  footer p {
+    font-size: 15px;
   }
 }
