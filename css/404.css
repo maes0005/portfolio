@@ -3,8 +3,6 @@ body {
   display: grid;
   place-items: center; /* centrerer hele containeren */
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #dddbdb;
   text-align: center;
 }
 
@@ -28,7 +26,7 @@ body {
 }
 
 .p_404{
-  font-family: "Inter", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
   font-size: 20px;
   color: #8d392a;
 }
