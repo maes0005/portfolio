@@ -19,7 +19,7 @@ body {
   margin-top: 5px;
 }
 
-h1_404{
+.h1_404{
   text-align: center;
   font-family: "Itim", cursive;
   font-weight: 500;
@@ -27,7 +27,7 @@ h1_404{
   color: #8d392a;
 }
 
-p_404{
+.p_404{
   font-family: "Inter", sans-serif;
   font-size: 20px;
   color: #8d392a;
